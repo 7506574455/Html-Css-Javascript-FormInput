@@ -23,4 +23,16 @@ const emailError = document.querySelector('.email-error');
             emailError.emailContent = "";
         else emailError.emailContent = "Email is Invalid";
 });
+
+//UC3
+//Mobile number validation
+const number = document.querySelector('#tel');
+const numberError = document.querySelector('.tel-error');
+number.addEventListener('input', function () {
+    let numberRegex = RegExp('^[1-9]{2}\\s{0,1}[1-9]{1}[0-9]{9}$');
+    if (numberRegex.test(number.value))
+        numberError.textContent = ' ';
+    else
+        numberError.textContent = 'Invalid Number!';
+});  
  
