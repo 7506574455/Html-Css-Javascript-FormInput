@@ -35,5 +35,16 @@ number.addEventListener('input', function () {
     else
         numberError.textContent = 'Invalid Number!';
 }); 
+//UC4
+//password validation minimum 8 characters
+const pwd = document.querySelector('#pwd');
+const passworderror = document.querySelector('.pwd-error');
+pwd.addEventListener('input', function () {
+let passwordpattern = RegExp('^[a-z A-Z 0-9 @#%!&*_]{8,}$');
+    if (passwordpattern.test(pwd.value))
+        passworderror.textContent = ' ';
+    else
+        passworderror.textContent = 'Invalid Password!';
+});
 
  
