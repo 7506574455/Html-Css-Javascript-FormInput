@@ -35,16 +35,21 @@ number.addEventListener('input', function () {
     else
         numberError.textContent = 'Invalid Number!';
 }); 
-//UC4
-//password validation minimum 8 characters
+//UC5
+// rule 1-password validation minimum 8 characters
+//all rules passed
+//rule 2-at least 1 upper case
+//rule 3-at least 1 numberic number
+//rule 4-exactly 1 special character
 const pwd = document.querySelector('#pwd');
 const passworderror = document.querySelector('.pwd-error');
 pwd.addEventListener('input', function () {
-let passwordpattern = RegExp('^[a-z A-Z 0-9 @#%!&*_]{8,}$');
+    let passwordpattern = RegExp('^[a-z A-Z 0-9 @#%!&*_]{8,}$');
     if (passwordpattern.test(pwd.value))
         passworderror.textContent = ' ';
     else
         passworderror.textContent = 'Invalid Password!';
 });
+        
 
  

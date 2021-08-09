@@ -100,7 +100,11 @@
             else
                 numberError.textContent = 'Invalid Number!';
         });
-        //password validation minimum 8 characters
+        // rule 1-password validation minimum 8 characters
+        //all rules passed
+        //rule 2-at least 1 upper case
+        //rule 3-at least 1 numberic number
+        //rule 4-exactly 1 special character
         const pwd = document.querySelector('#pwd');
         const passworderror = document.querySelector('.pwd-error');
         pwd.addEventListener('input', function () {
