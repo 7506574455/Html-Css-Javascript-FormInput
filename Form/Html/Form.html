@@ -83,7 +83,7 @@
         
         const email = document.querySelector('#email');
         const emailError = document.querySelector('.email-error');
-        text.addEventListener('input', function() {
+        email.addEventListener('input', function() {
            let emailRegex = RegExp("^[A-Z a-z]{1,}([+-_.]*)[A-Z a-z 0-9 _+-.]*[@]{1}[A-Z a-z 0-9 +_-]{1,}[.]{1}[a-z]{2,3}([.]{1}[a-z]{2})*$");
            if(emailRegex.test(email.value))
               emailError.emailContent = "";
@@ -99,7 +99,7 @@
                 numberError.textContent = ' ';
             else
                 numberError.textContent = 'Invalid Number!';
-        });  
+        });
         
         
     </script>

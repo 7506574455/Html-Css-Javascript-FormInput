@@ -34,5 +34,6 @@ number.addEventListener('input', function () {
         numberError.textContent = ' ';
     else
         numberError.textContent = 'Invalid Number!';
-});  
+}); 
+
  
